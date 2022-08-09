@@ -1,0 +1,13 @@
+@use '../base/variables' as v;
+
+.main__suplementos{
+    padding-top: 7rem;
+    background: v.$negro;
+
+    h2{
+        text-align: center;
+        color: v.$blanco;
+        font-size: 4rem;
+        margin-bottom: 3rem;
+    }
+}

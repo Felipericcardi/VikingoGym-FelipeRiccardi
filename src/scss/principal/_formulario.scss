@@ -1,0 +1,79 @@
+@use '../base/variables' as v;
+
+.formulario__contacto{
+    background-color: v.$negro;
+
+    h2{
+        color: v.$blanco;
+        padding-top: 7rem;
+        text-align: center;
+    }
+}
+.formulario {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding-bottom: 7rem;
+
+    legend{
+        background-color: v.$blanco;
+        width: 100%;
+        text-align: center;
+        color: v.$negro;
+        text-transform: uppercase;
+        font-weight: 900;
+        padding: 1rem;
+        margin: 0 auto 4rem auto;
+
+        @media(min-width: v.$chico){
+            width: 100%;
+            margin: 0 auto 4rem auto;
+        }
+    }
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+    flex-direction: column;
+
+    @media(min-width: v.$chico){
+        flex-direction: row;
+    }
+
+    label{
+        color: v.$blanco;
+        font-size: 1.6rem;
+        flex-basis: 0;
+
+        @media(min-width: v.$chico){
+            flex-basis: 10rem;
+        }
+    }
+}
+.campo input:not([type="radio"]),
+.campo textarea,
+.campo select  {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+.btn-campo {
+    background-color: v.$blanco;
+    display: block;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out ;
+    text-align: center;
+    border: none;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+}
+@media (min-width: 480px) { 
+    .btn {
+        width: auto;
+    }
+}

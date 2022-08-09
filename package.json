@@ -1,0 +1,15 @@
+{
+  "name": "vikingo-gym---felipe-ricardi",
+  "version": "1.0.0",
+  "description": "Vikingo Gym'",
+  "main": "index.js",
+  "scripts": {
+    "compilar:sass": "sass --watch src/scss:build/css"
+  },
+  "author": "Felipe Ricardi",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.2.0",
+    "sass": "^1.54.0"
+  }
+}

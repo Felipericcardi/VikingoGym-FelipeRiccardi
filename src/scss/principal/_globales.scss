@@ -1,0 +1,25 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+p {
+    font-size: 2rem;
+    line-height: 2;
+}
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ul li{
+    list-style: none;
+}

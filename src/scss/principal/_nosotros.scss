@@ -1,0 +1,18 @@
+@use '../base/variables' as v;
+
+.nosotros a{
+    color: v.$blanco;
+
+    @media(min-width: v.$alto){
+        color: v.$negro;
+    }
+}
+
+.main__nosotros{
+    background: v.$negro;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+.nosotros__img img{
+    width: 100%;
+}

@@ -1,0 +1,53 @@
+@use '../base/variables' as v;
+
+.footer{
+    background-color: v.$bg-color;
+    padding-top: 7rem;
+
+    img{
+        margin-bottom: 2rem;
+        margin: 0 auto;
+    }
+
+    @media(min-width: v.$medio){
+        img{
+            margin: 0;
+        }
+    }
+}
+
+.footer__grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+
+    @media(min-width: v.$medio){
+        grid-template-columns: repeat(4, 1fr);
+        text-align: left;
+    }
+}
+
+.footer__box{
+    h3{
+        margin-bottom: 2.5rem;
+        font-weight: 700;
+        color: v.$blanco;
+    }
+}
+
+.footer__enlace{
+    display: flex;
+    flex-direction: column;
+
+    a{
+        color: v.$blanco;
+        text-decoration: none;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        font-weight: 400
+    }
+
+    a:hover{
+        color: v.$blanco;
+    }
+}

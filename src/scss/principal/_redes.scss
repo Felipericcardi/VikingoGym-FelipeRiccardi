@@ -1,0 +1,23 @@
+@use '../base/variables' as v;
+
+.redes{
+    background: v.$negro;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+
+    &__info{
+        color: v.$blanco;
+        text-align: center;
+
+        h1{
+            font-size: 2rem;
+
+            @media(min-width: v.$medio){
+                font-size: 3rem;
+            }
+        }
+    }
+}
+.redes__flex img{
+    width: 20rem;
+}
